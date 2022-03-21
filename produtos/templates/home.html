@@ -1,0 +1,46 @@
+{% extends 'base.html'%}
+
+{% block 'titulo'%}
+Renda Extra
+{% endblock%}
+
+{% block 'body' %}
+
+  <div class="row">
+    {% for i in posts %}
+    <div class="leftcolumn">
+      <div class="card text-center">
+        <h2>{{i.titulo}}</h2>
+        <h5>{{i.descricao}} ,{{i.data}}</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>{{i.sobre}}</p>
+      </div>
+    </div>
+    {% endfor %}
+    <div class="rightcolumn">
+      <div class="card">
+        <h2 class="text-center">Autor</h2>
+        <img  src="/static/produto/profile.png" style="height: 100%; width: 100%;"></img>
+        <p></p>
+        <p class="text-center">Vitor Gomes</p>
+        <p>Afiliado dos melhores produtos Digitais da Monetizze</p>
+      </div>
+      <div class="card text-center">
+        <h3>Mais Visitados</h3>
+        <div class="fakeimg">Image</div><br>
+        <div class="fakeimg">Image</div><br>
+        <div class="fakeimg">Image</div>
+      </div>
+      <div class="card">
+        <h3>Siga me</h3>
+        <p><a href="#" target="_blank">
+          <img src="https://img.icons8.com/color/48/000000/facebook-circled--v4.png"/>
+          <a href="#" target="_blank">
+            <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+          </a>
+        </a>
+      </p>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
