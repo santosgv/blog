@@ -3,6 +3,8 @@ body {
     padding: 20px;
     background: #f1f1f1;
   }
+
+ 
   
   /* Header/Blog Title */
   .header {
@@ -63,3 +65,5 @@ body {
       padding: 0;
     }
   }
+  
+  

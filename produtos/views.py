@@ -6,5 +6,5 @@ def home(request):
     posts = Posts.objects.all()
     return render(request,'home.html',{'posts':posts})
 
-def produto(request):
-    return render(request,'produto.html')
+def posts(request):
+    return render(request,'posts.html')
