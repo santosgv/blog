@@ -1,10 +1,7 @@
-from .models import Posts
+from .models import Curso
 from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    posts = Posts.objects.all()
-    return render(request,'home.html',{'posts':posts})
-
-def posts(request):
-    return render(request,'posts.html')
+    Cursos = Curso.objects.all()
+    return render(request,'home.html',{'Cursos':Cursos})
