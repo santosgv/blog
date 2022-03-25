@@ -13,6 +13,7 @@ Renda Extra
     {% for i in Cursos %}
     <h5 class="card-title">{{i.titulo}}</h5>
     <p>{{i.data}}</p>
+    <p>{{i.id}}</p>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
             {% for img in i.imagens.all %}
@@ -32,7 +33,7 @@ Renda Extra
     </div>
     <p class="card-text">{{i.descricao}}</p>
     <p class="card-text">{{i.sobre}}</p>
-    <a href="{{i.link}}" class="btn btn-primary" target="_blank">Saber Mais</a>
+    <a href="{% url 'curso' i.id%}" class="btn btn-primary">Saber Mais</a>
     <hr>
     {% endfor %}
     
