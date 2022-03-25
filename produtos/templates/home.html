@@ -13,7 +13,6 @@ Renda Extra
     {% for i in Cursos %}
     <h5 class="card-title">{{i.titulo}}</h5>
     <p>{{i.data}}</p>
-    <p>{{i.id}}</p>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
             {% for img in i.imagens.all %}
