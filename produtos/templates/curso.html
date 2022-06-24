@@ -23,10 +23,15 @@
               <span class="sr-only">Next</span>
           </a>
           </div>
-          <br>
-    <p class="card-text text-center">{{curso.sobre}}</p>
-
-<a href="{{curso.link}}" class="btn btn-primary">Comprar</a>
+          <hr>
+        <p class="card-text text-center">{{curso.sobre}}</p>
+       
+        <div class="card-text text-center">
+            <h4>Mais Sobre o Curso</h4>
+            {{curso.texto}}
+        </div>
+        <hr>
+<a href="{{curso.link}}" target="_black" class="btn btn-primary">Comprar</a>
 </div>
 </div>
 {% endblock %}
